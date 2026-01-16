@@ -72,7 +72,8 @@
 .hero-img{
     display: flex;
     position: relative;
-    margin-right: 130px;
+    margin-right: 150px;
+    margin-left: 50px;
     margin-top: 60px;
     bottom: 150px;
 }
@@ -80,5 +81,190 @@
     border-radius: 30px;
     height: 550px;
     width: 550px;
+}
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* TABLETS (até 1024px) */
+@media (max-width: 1024px) {
+    .name {
+        font-size: 32px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 0 15px;
+    }
+
+    .icons a {
+        margin: 0 15px;
+        font-size: 26px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 80px 5%;
+    }
+
+    .hero-main {
+        bottom: 0;
+        max-width: 100%;
+    }
+
+    .hero-main h1 {
+        font-size: 42px;
+    }
+
+    .hero-main h3 {
+        font-size: 26px;
+    }
+
+    .hero-main p {
+        font-size: 18px;
+    }
+
+    .hero-img {
+        margin-right: 0;
+        bottom: 0;
+    }
+
+    .hero-img img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* CELULARES (até 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar a {
+        margin: 0;
+    }
+
+    .icons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-main {
+        bottom: 0;
+    }
+
+    .hero-main h1 {
+        font-size: 34px;
+    }
+
+    .hero-main h3 {
+        font-size: 22px;
+    }
+
+    .hero-main p {
+        font-size: 16px;
+    }
+
+    .hero-img {
+        bottom: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .hero-img img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* CELULARES PEQUENOS (até 480px) */
+@media (max-width: 480px) {
+    .name {
+        font-size: 28px;
+    }
+
+    .hero-main h1 {
+        font-size: 28px;
+    }
+
+    .hero-main h3 {
+        font-size: 20px;
+    }
+
+    .hero-main p {
+        font-size: 15px;
+    }
+
+    .hero-img img {
+        width: 250px;
+        height: 250px;
+    }
+}
+/* NOTEBOOKS (até 1366px) */
+@media (max-width: 1366px) {
+    .header {
+        padding: 20px 4%;
+    }
+
+    .name {
+        font-size: 34px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 0 18px;
+    }
+
+    .icons a {
+        font-size: 26px;
+        margin: 0 18px;
+    }
+
+    .hero {
+        padding: 60px 4%;
+        height: auto;
+    }
+
+    .hero-main {
+        bottom: 100px;
+        max-width: 600px;
+    }
+
+    .hero-main h1 {
+        font-size: 44px;
+    }
+
+    .hero-main h3 {
+        font-size: 26px;
+    }
+
+    .hero-main p {
+        font-size: 18px;
+    }
+
+    .hero-img {
+        margin-right: 100px;
+        bottom: 80px;
+    }
+
+    .hero-img img {
+        width: 420px;
+        height: 420px;
+    }
 }
 
