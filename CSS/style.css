@@ -3,6 +3,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+body{
+    background: linear-gradient(to top, #0597F2, #0597F2);
+}
 .header{
     display: flex;
     width: 100%;
@@ -43,12 +46,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to top, #0597F2, #0597F2);
     padding: 50px 8%;
     height: 100vh;
     width: 100%;
 }
 .hero-main{
+    margin-top: 150px;
     position: relative;
     bottom: 200px;
     max-width: 690px;
@@ -63,7 +66,24 @@
     font-size: 30px;
     font-weight: 600px;
     color:#F2D22E;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+.logo{
+    display: flex;
+}
+.html{
+    position: relative;
+    bottom: 45px;
+    left: 370px;
+    height: 29px;
+    width: 29px;
+}
+.css{
+    position: relative;
+    bottom: 44px;
+    left: 375px;
+    height: 25px;
+    width: 25px;
 }
 .hero-main p{
     font-family: "DM Sans", sans-serif;
@@ -74,7 +94,7 @@
     position: relative;
     margin-right: 150px;
     margin-left: 50px;
-    margin-top: 60px;
+    margin-top: 180px;
     bottom: 150px;
 }
 .hero-img img{
@@ -82,189 +102,44 @@
     height: 550px;
     width: 550px;
 }
-/* =========================
-   RESPONSIVIDADE
-========================= */
-
-/* TABLETS (até 1024px) */
-@media (max-width: 1024px) {
-    .name {
-        font-size: 32px;
-    }
-
-    .navbar a {
-        font-size: 18px;
-        margin: 0 15px;
-    }
-
-    .icons a {
-        margin: 0 15px;
-        font-size: 26px;
-    }
-
-    .hero {
-        height: auto;
-        padding: 80px 5%;
-    }
-
-    .hero-main {
-        bottom: 0;
-        max-width: 100%;
-    }
-
-    .hero-main h1 {
-        font-size: 42px;
-    }
-
-    .hero-main h3 {
-        font-size: 26px;
-    }
-
-    .hero-main p {
-        font-size: 18px;
-    }
-
-    .hero-img {
-        margin-right: 0;
-        bottom: 0;
-    }
-
-    .hero-img img {
-        width: 400px;
-        height: 400px;
-    }
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about h1 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.about p{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.4px);
+    -webkit-backdrop-filter: blur(1.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    max-width: 900px;
+    margin-bottom: 150px;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services h1{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 50px;
 }
 
-/* CELULARES (até 768px) */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .navbar a {
-        margin: 0;
-    }
-
-    .icons {
-        display: flex;
-        gap: 20px;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-    }
-
-    .hero-main {
-        bottom: 0;
-    }
-
-    .hero-main h1 {
-        font-size: 34px;
-    }
-
-    .hero-main h3 {
-        font-size: 22px;
-    }
-
-    .hero-main p {
-        font-size: 16px;
-    }
-
-    .hero-img {
-        bottom: 0;
-        margin-right: 0;
-        justify-content: center;
-    }
-
-    .hero-img img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-/* CELULARES PEQUENOS (até 480px) */
-@media (max-width: 480px) {
-    .name {
-        font-size: 28px;
-    }
-
-    .hero-main h1 {
-        font-size: 28px;
-    }
-
-    .hero-main h3 {
-        font-size: 20px;
-    }
-
-    .hero-main p {
-        font-size: 15px;
-    }
-
-    .hero-img img {
-        width: 250px;
-        height: 250px;
-    }
-}
-/* NOTEBOOKS (até 1366px) */
-@media (max-width: 1366px) {
-    .header {
-        padding: 20px 4%;
-    }
-
-    .name {
-        font-size: 34px;
-    }
-
-    .navbar a {
-        font-size: 18px;
-        margin: 0 18px;
-    }
-
-    .icons a {
-        font-size: 26px;
-        margin: 0 18px;
-    }
-
-    .hero {
-        padding: 60px 4%;
-        height: auto;
-    }
-
-    .hero-main {
-        bottom: 100px;
-        max-width: 600px;
-    }
-
-    .hero-main h1 {
-        font-size: 44px;
-    }
-
-    .hero-main h3 {
-        font-size: 26px;
-    }
-
-    .hero-main p {
-        font-size: 18px;
-    }
-
-    .hero-img {
-        margin-right: 100px;
-        bottom: 80px;
-    }
-
-    .hero-img img {
-        width: 420px;
-        height: 420px;
-    }
-}
 
